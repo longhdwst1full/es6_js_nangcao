@@ -11,4 +11,10 @@ export default function rest_param() {
         console.log("result : ", result)
     }
     total(1, 2, 3)
+    function show({ a, b, ...other }) {
+        console.log(a); // 1
+        console.log(b); // 2
+        console.log(other); // { c: 3, d: 4}
+    }
+    show({ a: 1, b: 2, c: 3, d: 4 });
 }

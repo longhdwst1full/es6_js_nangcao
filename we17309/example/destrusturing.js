@@ -27,6 +27,8 @@ console.log("count", count());
 import rest_param from "./rest-param";
 import spread_operator from "./spread-operator"
 import array_method from "./array_method";
+import { sum,Pages } from "./Pages";
 spread_operator()
 array_method();
 rest_param();
+Pages(2,3);
