@@ -1,10 +1,10 @@
 import Header from "../components/Header";
 
-export default function Post_detail() {
+export default function ProjectDetailPage() {
     return `
         <div>
         ${Header()}
-            Đây là trang Post detail
+            Đây là trang ProjectDetailPage
         </div>
     `
 }

@@ -1,11 +1,13 @@
-import './style.css';
 // import { setupCounter } from './counter.js'
 
 import About from './example/About';
 import Contact from './example/Contact';
 import Home from './example/Home';
-import Post_detail from './example/Post-detail';
+import PostDetailPage from './example/PostDetailPage';
 import { render, router } from './lib';
+import ProjectsPage from './example/ProjectsPage';
+import PostsPage from './example/posts';
+import ProjectDetailPage from './example/ProjectDetailPage';
 
 // alt shift + o : format theo abc
 // import file 
@@ -18,10 +20,13 @@ const app = document.querySelector('#app');
 
 router.on("/", () => render(Home, app));
 router.on("/about", () => render(About, app));
-router.on("/postpage", () => render(About, app));
-router.on("/postpage/:id", () => render(About, app));
+
 router.on("/contact", () => render(Contact, app));
-router.on("/projects", () => render(Post_detail, app));
 router.notFound(() => console.log("Not found"));
+
+router.on("/projects", () => render(ProjectsPage, app));
+router.on("/project/:id", (param ) => render(ProjectDetailPage(param.id), app));
+router.on("/posts", () => render(PostsPage, app));
+router.on("/post/:id", (param) => render(PostDetailPage(param.data.id), app));
 
 router.resolve();

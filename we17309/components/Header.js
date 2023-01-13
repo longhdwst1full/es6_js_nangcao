@@ -1,14 +1,12 @@
 
+import Nav from "./Nav";
+
 
 export default function Header() {
     return (`
-        <header>
-            <nav>
-                <a href="/" >Home </a>
-                <a href="/about" >About</a>
-                <a href="/projects" >Project </a>
-                <a href="/contact" >Contact</a>
-            </nav>
+        <header class="w-[80%] my-0 mx-auto ">
+          ${Nav()}
+
         </header>
 `
     )
