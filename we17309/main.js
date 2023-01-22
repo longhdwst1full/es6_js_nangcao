@@ -1,13 +1,13 @@
 // import { setupCounter } from './counter.js'
 
-import About from './example/About';
-import Contact from './example/Contact';
-import Home from './example/Home';
-import PostDetailPage from './example/PostDetailPage';
-import { render, router } from './lib';
-import ProjectsPage from './example/ProjectsPage';
-import PostsPage from './example/posts';
-import ProjectDetailPage from './example/ProjectDetailPage';
+import About from './src/pages/About';
+import Contact from './src/pages/Contact';
+import Home from './src/pages/Home';
+import PostDetailPage from './src/pages/PostDetailPage';
+import { render, router } from './src/lib';
+import ProjectsPage from './src/pages/ProjectsPage';
+import PostsPage from './src/pages/posts';
+import ProjectDetailPage from './src/pages/ProjectDetailPage';
 
 // alt shift + o : format theo abc
 // import file 

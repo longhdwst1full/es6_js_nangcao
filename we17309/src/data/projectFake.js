@@ -22,5 +22,10 @@ const projectsFake = [
         ],
     },
 ];
-
-export { projectsFake };
+const menus = [
+    { id: 1, name: "Trang chủ", link: "/" },
+    { id: 2, name: "Dự án", link: "/projects" },
+    { id: 3, name: "Liên hệ", link: "/contact" },
+    { id: 4, name: "Bài viết", link: "/posts" },
+]
+export { projectsFake, menus };

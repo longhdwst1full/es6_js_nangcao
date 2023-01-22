@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import ProjectList from "../components/ProjectList";
 import { projectsFake } from "../data/projectFake";
 
 const PostsPage = () => {
@@ -6,8 +7,6 @@ const PostsPage = () => {
     return `
         ${Header()}
     <h1>Posts Page</h1>
-    ${projectsFake.map(item => `<div><a href="/post/${item.id}">  ${item.name}</a></div>`
-    ).join("")
-        }`
+   ${ProjectList({ project: projectsFake })}`
 };
 export default PostsPage;
