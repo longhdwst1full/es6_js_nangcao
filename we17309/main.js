@@ -1,32 +1,28 @@
-// // import { setupCounter } from './counter.js'
 
-// import About from './src/pages/About';
-// import Contact from './src/pages/Contact';
-// import Home from './src/pages/Home';
-// import PostDetailPage from './src/pages/PostDetailPage';
-// import { render, router } from './src/lib';
-// import ProjectsPage from './src/pages/ProjectsPage';
-// import PostsPage from './src/pages/posts';
-// import ProjectDetailPage from './src/pages/ProjectDetailPage';
+
 
 // // alt shift + o : format theo abc
 // // import file 
 
+import { render, router } from "./src/lib/data";
+import About from "./src/pages/About";
+import Contact from "./src/pages/Contact";
+import Home from "./src/pages/Home";
+import Prodcuts from "./src/pages/Prodcuts";
+import ProductDetail from "./src/pages/ProductDetail";
+
 const app = document.querySelector('#app');
 
-// // render(Home, app);
-// // render(Post_detail, app);
-// // setupCounter(document.querySelector('#counter'))
+render(Home, app);
 
-// router.on("/", () => render(Home, app));
-// router.on("/about", () => render(About, app));
 
-// router.on("/contact", () => render(Contact, app));
-// router.notFound(() => console.log("Not found"));
+router.on("/", () => render(Home, app));
+router.on("/about", () => render(About,app))
 
-// router.on("/projects", () => render(ProjectsPage, app));
-// router.on("/project/:id", (param ) => render(ProjectDetailPage(param.id), app));
-// router.on("/posts", () => render(PostsPage, app));
-// router.on("/post/:id", (param) => render(PostDetailPage(param.data.id), app));
+router.on("/contact", () => render(Contact, app));
+router.notFound(() => console.log("Not found"));
 
-// router.resolve();
+router.on("/products", () => render(Prodcuts, app));
+router.on("/products/:id", (param ) => render(ProductDetail(param.id), app));
+
+router.resolve();

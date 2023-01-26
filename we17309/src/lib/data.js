@@ -1,3 +1,5 @@
+import Navigo from "navigo"
+
 const iteam_array = [{
     image: './images/imageHome/image 26.png',
     id: 1,
@@ -88,26 +90,28 @@ let ListCategory = [
     }
 ];
 
- const menu =[ {
-    
-    name:'home',
+const menus = [{
+    name: 'Home',
     path: '/',
- },
- {
-    name:'about',
+},
+{
+    name: ' Products',
+    path: '/products',
+},
+{
+    name: ' About Us',
     path: '/about',
- },
- {
-    name:'product',
-    path: '/product',
- }
+},
+{
+    name: 'Contact Us',
+    path: '/contact',
+}
 
 ]
-import Navigo from "navigo"
 
-export const router = new Navigo("/", { linksSelector: "a", hash: true });
+const router = new Navigo("/", { linksSelector: "a", hash: true });
 
-export const render = (content, container) => {
+const render = (content, container) => {
     if (typeof content === "string") {
 
         container.innerHTML = content
@@ -118,7 +122,8 @@ export const render = (content, container) => {
 }
 
 export {
+    router, render,
     ListCategory,
     iteam_array,
-    menu
+    menus
 }
