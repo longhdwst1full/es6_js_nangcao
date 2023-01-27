@@ -19,29 +19,29 @@ export default function Product_list() {
             <option value="3">1</option>
         </select>
       </div>
-      <div class="grid grid-cols-3  gap-y-7 gap-x-5">
+        <div class="grid grid-cols-3  gap-y-7 gap-x-5">
         
 
-        ${iteam_array.map(item => (`
-        <div>
-            <div class="rounded-2xl bg-cover w-fit overflow-hidden">
-                <img src="${item.image}"/> 
+            ${iteam_array.map(item => (`
+            <div>
+                <div class="rounded-2xl bg-cover w-fit overflow-hidden">
+                    <a href="/products/${item.id}"> <img src="${item.image}"/> </a>
+                </div>
+                <p class="text-red-500 py-4 text-[20px]">
+                    ${item.name}
+                </p>
+                <p class="flex ">
+                    <span class="flex mr-3">
+                        <img class="mr-1" src="https://longhdwst1full.github.io/web_ban_hang/images/icon/time.png">
+                    <span class=""> 30 Minutes</span>
+                    
+                        </span>
+                        <span class="flex">
+                            <img class="mr-1" src="https://longhdwst1full.github.io/web_ban_hang/images/icon/ForkKnife.png">
+                            <span>Snack</span>
+                        </span>   
+                </p>
             </div>
-            <p class="text-red-500 py-4 text-[20px]">
-                ${item.name}
-            </p>
-            <p class="flex ">
-                <span class="flex mr-3">
-                    <img class="mr-1" src="https://longhdwst1full.github.io/web_ban_hang/images/icon/time.png">
-                   <span class=""> 30 Minutes</span>
-                
-                    </span>
-                    <span class="flex">
-                        <img class="mr-1" src="https://longhdwst1full.github.io/web_ban_hang/images/icon/ForkKnife.png">
-                        <span>Snack</span>
-                    </span>   
-            </p>
-        </div>
 
             `)).join("")}
         </div>

@@ -23,6 +23,6 @@ router.on("/contact", () => render(Contact, app));
 router.notFound(() => console.log("Not found"));
 
 router.on("/products", () => render(Prodcuts, app));
-router.on("/products/:id", (param ) => render(ProductDetail(param.id), app));
+router.on("/products/:id", ({data:{id}} ) => render(ProductDetail(id),app));
 
 router.resolve();
