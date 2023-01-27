@@ -1,7 +1,7 @@
 import Navigo from "navigo"
 
 const iteam_array = [{
-    image: './images/imageHome/image 26.png',
+    image: 'https://longhdwst1full.github.io/web_ban_hang/images/imageHome/image%2026.png',
     id: 1,
     name: "Big and Juicy Wagyu Beef Cheeseburger",
     price: 30,
@@ -15,11 +15,11 @@ const iteam_array = [{
     desc: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
 
     category: 1,
-    image: './images/imageHome/image 26 (1).png',
+    image: 'https://longhdwst1full.github.io/web_ban_hang/images/imageHome/image%2026%20(1).png',
 
 },
 {
-    image: './images/imageHome/image 26 (2).png',
+    image: 'https://longhdwst1full.github.io/web_ban_hang/images/imageHome/image%2026%20(2).png',
     id: 3,
     name: "The Best Easy One Pot Chicken and Rice",
     price: 20,
@@ -28,7 +28,7 @@ const iteam_array = [{
     category: 3
 },
 {
-    image: './images/imageHome/image 26 (3).png',
+    image: 'https://longhdwst1full.github.io/web_ban_hang/images/imageHome/image%2026%20(3).png',
     id: 4,
     name: "Fresh and Healthy Mixed Mayonnaise ",
     price: 50,
@@ -37,7 +37,7 @@ const iteam_array = [{
     category: 4
 },
 {
-    image: './images/imageHome/image 26 (4).png',
+    image: 'https://longhdwst1full.github.io/web_ban_hang/images/imageHome/image%2026%20(4).png',
     id: 5,
     name: "The Creamiest Creamy Chicken",
     price: 60,
@@ -46,12 +46,11 @@ const iteam_array = [{
     category: 5
 },
 {
-    image: './images/imageHome/image 26 (5).png',
+    image: 'https://longhdwst1full.github.io/web_ban_hang/images/imageHome/image%2026%20(5).png',
     id: 6,
     name: "Fruity Pancake with Orange & Blueberry",
     price: 15,
     desc: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
-    image: "./images/imageHome/image 26 (5).png",
     category: 6
 }
 
@@ -60,32 +59,32 @@ const iteam_array = [{
 let ListCategory = [
     {
         id: 1,
-        image: "./images/imageHome/image 25.png",
+        image: "https://longhdwst1full.github.io/web_ban_hang/images/imageHome/image%2025.png",
         name: "Breakfast"
     },
     {
         id: 2,
-        image: "./images/imageHome/image 20.png",
+        image: "https://longhdwst1full.github.io/web_ban_hang/images/imageHome/image%2020.png",
         name: "Vegan"
     },
     {
         id: 3,
-        image: "./images/imageHome/image 21.png",
+        image: "https://longhdwst1full.github.io/web_ban_hang/images/imageHome/image%2021.png",
         name: "Meat"
     },
     {
         id: 4,
-        image: "./images/imageHome/image 22.png",
+        image: "https://longhdwst1full.github.io/web_ban_hang/images/imageHome/image%2022.png",
         name: "Dessert"
     },
     {
         id: 5,
-        image: "./images/imageHome/image 23.png",
+        image: "https://longhdwst1full.github.io/web_ban_hang/images/imageHome/image%2023.png",
         name: "Lunch"
     },
     {
         id: 6,
-        image: "./images/imageHome/image 24.png",
+        image: "https://longhdwst1full.github.io/web_ban_hang/images/imageHome/image%2024.png",
         name: "Chocolate"
     }
 ];
