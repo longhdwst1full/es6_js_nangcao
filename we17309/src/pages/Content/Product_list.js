@@ -1,8 +1,16 @@
-import { ListCategory, iteam_array } from "../../lib/data";
+import ProductItem from "../../components/ProductItem";
+import { iteam_array } from "../../lib/data";
+
 
 export default function Product_list() {
-    return (
-        `    <div>
+  const onChange_select = document.querySelector("#onChange_select");
+  console.log(onChange_select);
+
+  // onChange_select.addEventListener("change", (e) => {
+  //   console.log(e.target.value);
+  // })
+  return (
+    `    <div>
       <div class="text-center">
         <h2 class=" text-5xl mt-9 p-2 mb-2 font-bold">Our Popular Dishes
         </h2>
@@ -11,40 +19,14 @@ export default function Product_list() {
 
       </div>
       <div>
-        <select class="my-4 border-[1px] border-solid border-gray-700 py-3 pl-1  block rounded-lg min-w-[170px] ">
-            <option>Lọc giá</option>
-            <option>1</option>
-            <option value="1">1</option>
-            <option value="2">1</option>
-            <option value="3">1</option>
+        <select id="onChange_select" class="my-4 border-[1px] border-solid border-gray-700 py-3 pl-1  block rounded-lg min-w-[170px] " onchange="">
+
+            <option value="all">Tất cả</option>
+            <option value="1">Giá trên 30$</option>
+            <option value="2">Giá dưới 30$</option>
         </select>
       </div>
-        <div class="grid grid-cols-3  gap-y-7 gap-x-5">
-        
-
-            ${iteam_array.map(item => (`
-            <div>
-                <div class="rounded-2xl bg-cover w-fit overflow-hidden">
-                    <a href="/products/${item.id}"> <img src="${item.image}"/> </a>
-                </div>
-                <p class="text-red-500 py-4 text-[20px]">
-                    ${item.name}
-                </p>
-                <p class="flex ">
-                    <span class="flex mr-3">
-                        <img class="mr-1" src="https://longhdwst1full.github.io/web_ban_hang/images/icon/time.png">
-                    <span class=""> 30 Minutes</span>
-                    
-                        </span>
-                        <span class="flex">
-                            <img class="mr-1" src="https://longhdwst1full.github.io/web_ban_hang/images/icon/ForkKnife.png">
-                            <span>Snack</span>
-                        </span>   
-                </p>
-            </div>
-
-            `)).join("")}
-        </div>
+       ${ProductItem(iteam_array, true)}
     </div>`
-    )
+  )
 }

@@ -12,14 +12,14 @@ export default function Home() {
       ${header()}
       
       <div class="content">
-       
-      ${banner()}
-      
-      ${Product_list()}
+        
+        ${banner()}
+        
+        ${Product_list()}
 
-      ${Categories()}
+        ${Categories()}
 
-      ${Contact()}
+        ${Contact()}
       </div>
 
 
