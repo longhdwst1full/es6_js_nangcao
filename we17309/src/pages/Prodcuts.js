@@ -1,4 +1,3 @@
-import Button from "../components/Button";
 import Footer from "../components/Footer";
 import header from "../components/header";
 import ProductItem from "../components/ProductItem";

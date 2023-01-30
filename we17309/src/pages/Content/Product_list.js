@@ -1,14 +1,44 @@
 import ProductItem from "../../components/ProductItem";
+import useState from "../../Hook/useState";
 import { iteam_array } from "../../lib/data";
 
 
 export default function Product_list() {
-  const onChange_select = document.querySelector("#onChange_select");
-  console.log(onChange_select);
+  let [itemPrice, setItemPice] = useState(iteam_array);
+  // const [select, setChangeSelect] = useState("all");
 
-  // onChange_select.addEventListener("change", (e) => {
-  //   console.log(e.target.value);
-  // })
+  const priceOver30 = iteam_array?.filter(item => item.price > 30);
+  // console.log(priceOver30)
+  const priceUnder30 = iteam_array?.filter(item => item.price < 30);
+  const loadProduct = () => {
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const select = document.querySelector("#onChange_select");
+      select?.addEventListener("change", (e) => {
+        const selectedValue = e.target.value;
+        // do something with the selected value
+      
+        if (selectedValue == 1) {
+
+          setItemPice(priceOver30)
+
+          return ProductItem(itemPrice(), true)
+
+        }
+        else if (selectedValue == 2) {
+          setItemPice(priceUnder30)
+          console.log(itemPrice())
+          return ProductItem(itemPrice(), true)
+
+        }
+        else {
+          return ProductItem(itemPrice(), true)
+        }
+        return ProductItem(itemPrice(), true)
+      });
+    })
+
+  }
   return (
     `    <div>
       <div class="text-center">
@@ -26,7 +56,8 @@ export default function Product_list() {
             <option value="2">Giá dưới 30$</option>
         </select>
       </div>
-       ${ProductItem(iteam_array, true)}
+      ${loadProduct()}
+        
     </div>`
   )
 }
