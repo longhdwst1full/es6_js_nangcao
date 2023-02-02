@@ -8,6 +8,7 @@ import { render, router } from './src/lib';
 import ProjectsPage from './src/pages/ProjectsPage';
 import PostsPage from './src/pages/posts';
 import ProjectDetailPage from './src/pages/ProjectDetailPage';
+import AdminProjectPage from './src/pages/Admin/AdminProjectPage';
 
 // alt shift + o : format theo abc
 // import file 
@@ -25,8 +26,9 @@ router.on("/contact", () => render(Contact, app));
 router.notFound(() => console.log("Not found"));
 
 router.on("/projects", () => render(ProjectsPage, app));
-router.on("/project/:id", (param ) => render(ProjectDetailPage(param.id), app));
+router.on("/project/:id", (param) => render(ProjectDetailPage(param.id), app));
 router.on("/posts", () => render(PostsPage, app));
 router.on("/post/:id", (param) => render(PostDetailPage(param.data.id), app));
 
+router.on("/admin/project", () => render(AdminProjectPage, app))
 router.resolve();
