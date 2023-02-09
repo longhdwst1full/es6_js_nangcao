@@ -20,15 +20,19 @@ function useState(initialState) {
     }
     return [getState, setState];
 }
-const [count, setCount] = useState(0);
-console.log("count", count());
-setCount(20);
-console.log("count", count());
+// const [count, setCount] = useState(0);
+// console.log("count", count());
+// setCount(20);
+// console.log("count", count());
 import rest_param from "./rest-param";
 import spread_operator from "./spread-operator"
 import array_method from "./array_method";
-import { sum,Pages } from "./Pages";
-spread_operator()
-array_method();
-rest_param();
-Pages(2,3);
+// import { sum,Pages } from "./Pages";
+import callback from "./callback";
+import promise from "./promise";
+promise()
+// callback()
+// spread_operator()
+// array_method();
+// rest_param();
+// Pages(2,3);

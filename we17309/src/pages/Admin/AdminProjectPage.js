@@ -3,10 +3,16 @@ import { useEffect, useState } from "@/lib"
 
 const AdminProjectPage = () => {
     const [data, setData] = useState([]);
-    const projects = JSON.parse(localStorage.getItem('projects')) || [];
+    // const projects = JSON.parse(localStorage.getItem('projects')) || [];
 
     useEffect(() => {
-        setData(projects)
+        // setData(projects)
+         fetch("https://reqres.in/api/users")
+         .then(response => response.json())
+         .then(({data}) => {
+            console.log(data);
+            return setData(data);
+         })
     }, [])
 
     useEffect(() => {
@@ -47,7 +53,7 @@ const AdminProjectPage = () => {
                     ${data.map((project, index) => `
                             <tr class="p-2">
                                 <td class="p-2 border">${index + 1}</td>
-                                <td class="border">${project.name}</td>
+                                <td class="border">${project.first_name}</td>
                                 <td class="px-1 border"><button class="bg-red-500 btn-remove" data-id=${project.id}>Remove</button></td>
                                 <td class="border px-3"><a class="bg-blue-500 btn-remove" href="/admin/project/edit/${project.id}">Sửa</a></td>
                             </tr>
