@@ -3,22 +3,21 @@ import { router, useEffect, useState } from "@/lib"
 
 
 const ProjectAdd = () => {
-   
-    const projects= JSON.parse(localStorage.getItem("projects"))||[];
-    
     useEffect(() => {
-        
+
         const inputAdd = document.querySelector("#input_name");
         document.querySelector("#form")?.addEventListener("submit", (e) => {
             e.preventDefault();
-
-            projects.push({
-                id: projects.length + 1,
-                name: inputAdd.value
+            fetch("http://localhost:3000/projects", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+                , body: JSON.stringify({
+                    name: inputAdd.value
+                })
             })
-            localStorage.setItem("projects", JSON.stringify(projects))
-            // console.log(projectsFake)
-            router.navigate("/admin/project");
+                .then(() =>router.navigate("/admin/project"))
         })
     })
     return (
