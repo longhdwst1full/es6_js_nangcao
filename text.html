@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Image</title>
+</head>
+<body>
+  <h2>Upload Image</h2>
+  <form>
+    <input type="file" name="imageFile" id="imageFile" accept="image/*">
+    <input type="button" value="Preview" onclick="previewImage()">
+    <input type="button" value="Upload" onclick="uploadImage()">
+  </form>
+
+  <hr>
+
+  <h2>Preview</h2>
+  <img id="preview" src="#" alt="Preview" style="max-width: 400px; display: none;">
+
+  <script>
+    function previewImage() {
+      const fileInput = document.getElementById('imageFile');
+      const file = fileInput.files[0];
+
+      if (file) {
+        const reader = new FileReader();
+        reader.addEventListener('load', function() {
+          const previewImage = document.getElementById('preview');
+          previewImage.src = reader.result;
+          previewImage.style.display = 'block';
+        });
+        reader.readAsDataURL(file);
+      }
+    }
+
+    function uploadImage() {
+      const fileInput = document.getElementById('imageFile');
+      const file = fileInput.files[0];
+      const formData = new FormData();
+      formData.append('imageFile', file);
+
+      const url = './anh/';
+      const options = {
+        method: 'POST',
+        body: formData
+      };
+
+      fetch(url, options)
+        .then(response => response.text())
+        .then(result => {
+          console.log(result);
+          alert('Image uploaded successfully.');
+        })
+        .catch(error => {
+          console.error('Error uploading image:', error);
+          alert('Error uploading image.');
+        });
+    }
+  </script>
+</body>
+</html>
