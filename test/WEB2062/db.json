@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 14 promax",
+      "image": "https://res.cloudinary.com/dv3vzmogk/image/upload/v1666142438/anhhtus/%C4%90%E1%BB%81%20thi/3_225_c6ncpa.jpg",
+      "price": "3000000",
+      "quantity": "13",
+      "desc": "huonevjf vc"
+    },
+    {
+      "id": 2,
+      "name": "Laptop vip pro",
+      "image": "https://res.cloudinary.com/dv3vzmogk/image/upload/v1666142434/anhhtus/%C4%90%E1%BB%81%20thi/pro_2021_smiuet.png",
+      "price": "36000000 ",
+      "quality": "12",
+      "description": "amazing, good, nice, perfect"
+    },
+    {
+      "name": "iPhone123",
+      "image": "https://res.cloudinary.com/dv3vzmogk/image/upload/v1666142436/anhhtus/%C4%90%E1%BB%81%20thi/sm-s908_galaxys22ultra_front_burgundy_211119_1_mccaah.jpg",
+      "price": "280000",
+      "quality": "12",
+      "description": "asdfrgthyj",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "email": "long1@gmail.com",
+      "password": "$2a$10$ytuU9D0JoRjcKmmwKVXlVuyf9S4avxHNLcsor7SraYvJVcPF6v.FC",
+      "id": 1
+    },
+    {
+      "email": "long@gmail.com",
+      "password": "$2a$10$dB4CN4cnzQtt0MOtlFvDKOZCiXhE3bFkY0.Nb3H.DN.ausjR2rD.y",
+      "id": 2
+    }
+  ]
+}

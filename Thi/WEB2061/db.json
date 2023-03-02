@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Điện thoại Sam Sung",
+      "image": "images",
+      "price": 12,
+      "quality": 2000000,
+      "description": "Mới ra mắt rất đáng mua"
+    },
+    {
+      "id": 2,
+      "name": "Điện thoại Sam Sung",
+      "image": "images",
+      "price": "12",
+      "quanlity": "3554",
+      "description": "Mới ra mắt rất đáng mua"
+    },
+    {
+      "id": 3,
+      "name": "Điện thoại Iphone ",
+      "image": "images",
+      "price": 12,
+      "quality": 2000000,
+      "description": "Mới ra mắt rất đáng mua"
+    },
+    {
+      "id": 4,
+      "name": "Điện thoại Sam Sung2323232",
+      "image": "imagesđfdf",
+      "price": "12111",
+      "quanlity": "11",
+      "description": "Mới ra mắt rất đáng mua"
+    }
+  ],
+  "users": [
+    {
+      "email": "long@gmail.com",
+      "password": "$2a$10$tW/6VTitcjDQBKqJsvdm/.Q9rPYwRm99mn67ZZEPKIDBPfZih2JeS",
+      "id": 1
+    },
+    {
+      "email": "longhdph28352@fpt.edu.vn",
+      "password": "$2a$10$GsjsvHdfYePkdhet.80Z4.UvfejAyIl/0xexHWZINqASqYf53ZtKi",
+      "id": 2
+    }
+  ]
+}
