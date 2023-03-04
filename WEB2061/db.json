@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Điện thoại",
+      "categories": "Iphone",
+      "description": "Đẹp",
+      "images": "https://res.cloudinary.com/dv3vzmogk/image/upload/v1666142438/anhhtus/%C4%90%E1%BB%81%20thi/3_225_c6ncpa.jpg",
+      "price": 1000000
+    },
+    {
+      "id": 2,
+      "name": "Điện thoại 2",
+      "categories": "Iphone",
+      "description": "Đẹp",
+      "images": "https://res.cloudinary.com/dv3vzmogk/image/upload/v1666142436/anhhtus/%C4%90%E1%BB%81%20thi/sm-s908_galaxys22ultra_front_burgundy_211119_1_mccaah.jpg",
+      "price": 2000000
+    },
+    {
+      "id": 3,
+      "name": "Điện thoại 3",
+      "categories": "Iphone",
+      "description": "Đẹp",
+      "images": "https://res.cloudinary.com/dv3vzmogk/image/upload/v1666142435/anhhtus/%C4%90%E1%BB%81%20thi/macbook_256_ousklt.png",
+      "price": 3000000
+    },
+    {
+      "id": 4,
+      "name": "Máy tính123",
+      "categories": "vfgfnhgm",
+      "description": "đắt vl123",
+      "images": "https://res.cloudinary.com/phuong-fpoly/image/upload/v1677237454/EXAM_ECMA/pt6ahsjpo2jdlzrwszbw.jpg",
+      "price": 7800000000
+    },
+    {
+      "name": "Phuong",
+      "categories": "human",
+      "description": "dep trai vl",
+      "images": [
+        "https://res.cloudinary.com/phuong-fpoly/image/upload/v1677238863/EXAM_ECMA/r5qskarpsl9qwl66ftch.jpg"
+      ],
+      "price": 1000000000000000000,
+      "id": 5
+    },
+    {
+      "id": 8,
+      "name": "ssdsd",
+      "categories": "dsd",
+      "description": "ds",
+      "images": [
+        "https://res.cloudinary.com/phuong-fpoly/image/upload/v1677255937/EXAM_ECMA/rej5czmhowz6w8ufvjhj.png"
+      ],
+      "price": 1
+    }
+  ]
+}
