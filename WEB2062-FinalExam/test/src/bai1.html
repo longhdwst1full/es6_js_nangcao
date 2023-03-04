@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .item_description {
+        display: none;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Thông tin sản phẩm</h1>
+
+    <p class="title_product">Điện thoại Sam Sung</p>
+    <div class="item_description">
+      <p class="price">12000d</p>
+      <p class="desc">Hàng mới về rất đep</p>
+    </div>
+    <script>
+      const title_name = document.querySelector(".title_product");
+
+      title_name.addEventListener("click", (e) => {
+        const show_price_desc = (document.querySelector(".item_description").style.display = "block");
+      });
+
+    //   document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".price").addEventListener("click", (e) => {
+          const show_price_desc = (document.querySelector(".item_description").style.display = "none");
+        });
+    //   });
+    </script>
+  </body>
+</html>
